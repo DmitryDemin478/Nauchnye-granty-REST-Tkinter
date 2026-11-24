@@ -1,0 +1,12 @@
+GET /api/grants                         200 OK (3 записи)
+GET /api/grants?search=Биология         200 OK (грант ID 1)
+GET /api/grants/1                       200 OK
+GET /api/grants/999                     404 Not Found
+GET /api/grants/abc                     400 Bad Request
+POST /api/researchers                   201 Created
+POST /api/applications                  201 Created
+Location: /api/applications/1
+GET /api/applications/1                 200 OK
+POST /api/applications (повторно)       409 Conflict
+POST /api/applications (ошибка DTO)     400 Bad Request
+После перезапуска: грантов 3, заявок 0
