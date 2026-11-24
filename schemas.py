@@ -65,3 +65,7 @@ class LoginRequest(BaseModel):
 class ApplicationCreateRequest(BaseModel):
     researcher_id: int = Field(gt=0)
     grant_id: int = Field(gt=0)
+
+
+class ApplicationStatusRequest(BaseModel):
+    status: str = Field(min_length=1)
