@@ -1,0 +1,25 @@
+test_create_and_read_application_with_location (test_api.ApiTests.test_create_and_read_application_with_location) ... ok
+test_duplicate_returns_409 (test_api.ApiTests.test_duplicate_returns_409) ... ok
+test_existing_get_routes (test_api.ApiTests.test_existing_get_routes) ... ok
+test_invalid_dto_returns_400_without_creating_application (test_api.ApiTests.test_invalid_dto_returns_400_without_creating_application) ... ok
+test_grant_is_converted_to_response_dto (test_mapper.MapperTests.test_grant_is_converted_to_response_dto) ... ok
+test_grant_amount_must_be_positive (test_schemas.DtoValidationTests.test_grant_amount_must_be_positive) ... ok
+test_grant_end_date_must_not_precede_start_date (test_schemas.DtoValidationTests.test_grant_end_date_must_not_precede_start_date) ... ok
+test_registration_cannot_assign_admin_role (test_schemas.DtoValidationTests.test_registration_cannot_assign_admin_role) ... ok
+test_required_researcher_fields (test_schemas.DtoValidationTests.test_required_researcher_fields) ... ok
+test_bp01_registration_requires_fio_specialty_email (test_service.GrantServiceTests.test_bp01_registration_requires_fio_specialty_email) ... ok
+test_bp02_grant_amount_must_be_positive (test_service.GrantServiceTests.test_bp02_grant_amount_must_be_positive) ... ok
+test_bp03_end_date_cannot_precede_start_date (test_service.GrantServiceTests.test_bp03_end_date_cannot_precede_start_date) ... ok
+test_bp04_only_active_grant_accepts_application (test_service.GrantServiceTests.test_bp04_only_active_grant_accepts_application) ... ok
+test_bp05_specialty_must_match_direction (test_service.GrantServiceTests.test_bp05_specialty_must_match_direction) ... ok
+test_bp06_duplicate_application_is_rejected (test_service.GrantServiceTests.test_bp06_duplicate_application_is_rejected) ... ok
+test_bp07_application_can_be_rejected (test_service.GrantServiceTests.test_bp07_application_can_be_rejected) ... ok
+test_bp07_application_status_and_admin_decision (test_service.GrantServiceTests.test_bp07_application_status_and_admin_decision) ... ok
+test_bp08_registration_assigns_researcher_role (test_service.GrantServiceTests.test_bp08_registration_assigns_researcher_role) ... ok
+test_existing_grant_list_and_search (test_service.GrantServiceTests.test_existing_grant_list_and_search) ... ok
+test_state_is_reset_after_new_service_instance (test_service.GrantServiceTests.test_state_is_reset_after_new_service_instance) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.038s
+
+OK
